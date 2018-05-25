@@ -1,0 +1,10 @@
+Priority  Issue
+High      The _hash implementation is creating null pointer exception
+High      The sequence implementation is Wrong, it is casting double to integer
+Low       We assume the string to be json, if we pass any other type except Json it throws Json Parse
+          Exception, which is confusing, A QadiumException will be thrown for better understanding
+High      private variable which are mentioned as _fieldname does not work expected
+High      Transformation logic is used for all Json message, it should check it after private variables
+Medium    System does not handle the nested json properly, if a nested json contains "Qadium" it will not work
+High      Number of Queue is tightly coupled, with new enhancement number of queues can't be changed
+Medium    ArrayList is single threaded, the queue will not work for distributed environment
